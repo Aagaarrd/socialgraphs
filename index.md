@@ -54,7 +54,7 @@ We are interested in which kind of network we are dealing with. This can be answ
 
 ![Normalized out-degree for each season](normalized_degree.png)
 
-<iframe src="notebooks/network.html" width = "1000" height = "750", frameborder="0"></iframe>
+<iframe src="network.html" width = "1000" height = "750" frameborder="0"></iframe>
 
 Considering the degree of the characters throughout the entire series, we see that Finn and Jake actually take a dip at around season 4/5, which is possibly because they wanted to build more characters and flesh those out such that they have more pieces to play with for plot. The lore of the show also becomes a much more integral part of the show from around season 4/5, so it would make sense to introduce and build characters around there.
 
