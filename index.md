@@ -44,16 +44,16 @@ From the table below, we see to no surprise that Finn and Jake are the main play
 <th>10</th>      <td>Gunter: 0.032</td>      <td>Wyatt: 0.12</td>      <td>Gunter: 0.268</td>    </tr>  </tbody></table>
 
 
-There are clusters sort of floating on their own away from the central part of the network. These represent episodes in which there are a lot of characters that are never used again or only appear in episodes with each other. An example of this is the episode [City of Thieves](https://adventuretime.fandom.com/wiki/City_of_Thieves_(episode)) in which Finn and Jake travel to a city where everyone is a thief. Those thief characters are never used again and are therefor only interconnected forming a cluster.
+
 ![Network of all characters across all episodes](network_communities.png)
+There are clusters sort of floating on their own away from the central part of the network. These represent episodes in which there are a lot of characters that are never seen again or only appear in episodes with each other. An example of this is the episode [City of Thieves](https://adventuretime.fandom.com/wiki/City_of_Thieves_(episode)) in which Finn and Jake travel to a city where everyone is a thief. Those thief characters are never used again and are therefore only interconnected forming a cluster.
 
-
-We are interested in which kind of network we are dealing with. This can be answered by looking at the degree distribution from which we can infer the type of network. From our loglog plot of the network, it seems to follow a poissonian distribution indidicating a random network. This is unsurprising given our modelling of the network.
 ![Loglog degree distribution](loglog.png)
 
-
-Considering the degree of the characters throughout the entire series, we see that Finn and Jake actually take a dip at around season 4/5, which is possibly because they wanted to build more characters and flesh those out such that they have more pieces to play with for plot. The lore of the show also becomes a much more integral part of the show from around season 4/5, so it would make sense to introduce and build characters around there.
+We are interested in which kind of network we are dealing with. This can be answered by looking at the degree distribution from which we can infer the type of network. From our loglog plot of the network, it seems to follow a poissonian distribution indidicating a random network. This is unsurprising given our modelling of the network.
 
 ![Normalized out-degree for each season](normalized_degree.png)
+
+Considering the degree of the characters throughout the entire series, we see that Finn and Jake actually take a dip at around season 4/5, which is possibly because they wanted to build more characters and flesh those out such that they have more pieces to play with for plot. The lore of the show also becomes a much more integral part of the show from around season 4/5, so it would make sense to introduce and build characters around there.
 
 # Text analysis
