@@ -13,7 +13,7 @@ We're fans of the show and have noticed that it evolved from being a simple show
 
 * **What was your goal for the end user's experience?**
 
-Present some questions and hypothesis and hopefully draw meaningful conclusions from our data. This includes, but not limited to, if the important characters' in the earlier seasons roles in the show evolves throughout the show,  if the characters' dialog somehow changes and if so in what manner. (EXPAND)
+Present some questions and hypothesis and hopefully draw meaningful conclusions from our data. This includes, but not limited to, if the important characters' in the earlier seasons roles in the show evolves throughout the show,  if the characters' dialog somehow changes and if so in what manner. <font color='red'>EXPAND</font>
 
 
 # 2. Basic stats. Let's understand the dataset better
@@ -43,13 +43,12 @@ Betweenness centrality is a measure of how often a node is part of the shortest 
 
 Eigenvector centrality is used to get see if important characters are often linked with other important characters, thus making them more important.
 
-Degree centrality is the simplest form of centrality measure. This is the propability that a node is passed through.
-
+Degree centrality is the simplest form of centrality measure. This is the propability that a node is passed through when traversing the network.
 
 
 * **How did you use the tools to understand our dataset?**
 
-Both betweenness and degree centrality doesn't really tell us anything too interesting since it's the same bunch of central characters to the show which have the highest of those measures. Eigenvector centrality, however, seems to favor characters which are often *associated* with important characters while not actually being a central character. The Candy People and Peppermint Butler is very often with Princess Bubblegum since she governs the Candy Kingdom where the Candy People recides and Peppermint Butler is following her every step. BMO is very often with Finn and Jake since they all live together in the tree house. Tree Trunks and Mr. Pig is married and somewhat often run into problems which Finn and Jake solves (Wyatt, who's Tree Trunks ex-husband, is also shown to have a high Eigenvector centrality).
+Both betweenness and degree centrality doesn't really tell us anything too interesting since it's the same bunch of central characters to the show which have the highest of those measures, but they were worth exploring. Eigenvector centrality, however, seems to favor characters which are often *associated* with important characters. The Candy People and Peppermint Butler is very often with Princess Bubblegum since she governs the Candy Kingdom where the Candy People recide and Peppermint Butler is following her every step. BMO is very often with Finn and Jake since they all live together in the tree house. Tree Trunks and Mr. Pig are married and somewhat often run into problems which Finn and Jake solves (Wyatt, who's Tree Trunks ex-husband, is also shown to have a high Eigenvector centrality).
 
 # 4. Discussion
 

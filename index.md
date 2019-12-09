@@ -29,7 +29,7 @@ From the table below, we see to no surprise that Finn and Jake are the main play
 <th>7</th>      <td>Lumpy Space Princess: 216</td>      <td>Princess Bubblegum: 122</td>      <td>Candy People: 303</td>    </tr>    <tr>      
 <th>8</th>      <td>Lady Rainicorn: 158</td>      <td>Gunter: 106</td>      <td>Lumpy Space Princess: 302</td>    </tr>    <tr>      
 <th>9</th>      <td>Gunter: 150</td>      <td>Tree Trunks: 105</td>      <td>Lady Rainicorn: 290</td>    </tr>    <tr>      
-<th>10</th>      <td>Peppermint Butler: 142</td>      <td>Peppermint Butler: 101</td>      <td>Gunter: 256</td>    </tr>  </tbody></table>
+<th>10</th>     <td>Peppermint Butler: 142</td>      <td>Peppermint Butler: 101</td>      <td>Gunter: 256</td>    </tr>  </tbody></table>
 
 <table border="0" class="dataframe">  <thead>    <tr style="text-align: center;">      <th></th>      <th>Betweenness</th>      <th>Eigenvector</th>      <th>Degree centrality</th>    </tr>  </thead>  <tbody>    <tr>      
 <th>1</th>      <td>Jake: 0.195</td>      <td>Candy People: 0.197</td>      <td>Jake: 1.024</td>    </tr>    <tr>      
@@ -41,11 +41,13 @@ From the table below, we see to no surprise that Finn and Jake are the main play
 <th>7</th>      <td>Candy People: 0.045</td>      <td>Jake: 0.127</td>      <td>Candy People: 0.317</td>    </tr>    <tr>      
 <th>8</th>      <td>Lumpy Space Princess: 0.04</td>      <td>Princess Bubblegum: 0.126</td>      <td>Lumpy Space Princess: 0.316</td>    </tr>    <tr>      
 <th>9</th>      <td>Tree Trunks: 0.033</td>      <td>Mr. Pig: 0.124</td>      <td>Lady Rainicorn: 0.304</td>    </tr>    <tr>      
-<th>10</th>      <td>Gunter: 0.032</td>      <td>Wyatt: 0.12</td>      <td>Gunter: 0.268</td>    </tr>  </tbody></table>
+<th>10</th>     <td>Gunter: 0.032</td>      <td>Wyatt: 0.12</td>      <td>Gunter: 0.268</td>    </tr>  </tbody></table>
 
 
 
-![Network of all characters across all episodes](network_communities.png)
+<!--![Network of all characters across all episodes](network_communities.png)-->
+<iframe src="network.html" width = "1000" height = "750" frameborder="0"></iframe>
+
 There are clusters sort of floating on their own away from the central part of the network. These represent episodes in which there are a lot of characters that are never seen again or only appear in episodes with each other. An example of this is the episode [City of Thieves](https://adventuretime.fandom.com/wiki/City_of_Thieves_(episode)) in which Finn and Jake travel to a city where everyone is a thief. Those thief characters are never used again and are therefore only interconnected forming a cluster.
 
 ![Loglog degree distribution](loglog.png)
@@ -54,7 +56,6 @@ We are interested in which kind of network we are dealing with. This can be answ
 
 ![Normalized out-degree for each season](normalized_degree.png)
 
-<iframe src="network.html" width = "1000" height = "750" frameborder="0"></iframe>
 
 Considering the degree of the characters throughout the entire series, we see that Finn and Jake actually take a dip at around season 4/5, which is possibly because they wanted to build more characters and flesh those out such that they have more pieces to play with for plot. The lore of the show also becomes a much more integral part of the show from around season 4/5, so it would make sense to introduce and build characters around there.
 
