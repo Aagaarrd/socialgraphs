@@ -13,9 +13,8 @@ The Wiki also provides transcripts for a majority of the episodes. They cut off 
 - 225 transcripts (season 1-7)
 
 # Network analysis
-We have an idea of which characters are the most important to the show. 
-From the table below, we see to no surprise that Finn and Jake are the main players given their large out-degree and relatively low in-degree. This is a metric of how many episode in which they've had a, if not the most, prominent role.
-
+We want to verify that the characters we believe are the most important actually are from an analytical point of view.
+From the table below, we see to no surprise that Finn and Jake are the main players given their large out-degree and relatively low in-degree. This is a metric of how many episode in which they've had a prominent role.
 <table border="0" class="dataframe">  <thead>    <tr style="text-align: center;">      <th></th>      
 	<th>Out-degree</th>      <th>In-degree</th>      <th>Total degree</th>    </tr>  </thead>  <tbody>    <tr>      
 <th>1</th>      <td>Finn: 832</td>      <td>BMO: 186</td>      <td>Jake: 978</td>    </tr>    <tr>      
@@ -46,18 +45,16 @@ From the table below, we see to no surprise that Finn and Jake are the main play
 
 <hr>
 
-There are clusters sort of floating on their own away from the central part of the network. These represent episodes in which there are a lot of characters that are never seen again or only appear in episodes with each other. An example of this is the episode [City of Thieves](https://adventuretime.fandom.com/wiki/City_of_Thieves_(episode)) in which Finn and Jake travel to a city where everyone is a thief. Those thief characters are never used again and are therefore only interconnected forming a cluster.
-
+There are clusters floating on their own away from the central part of the network. These represent episodes in which there are a lot of characters that are never seen again or only appear in episodes with each other. An example of this is the episode [City of Thieves](https://adventuretime.fandom.com/wiki/City_of_Thieves_(episode)) in which Finn and Jake travel to a city where everyone is a thief. These thief characters are never used again and are therefore only interconnected forming a cluster.
 <!--![Network of all characters across all episodes](network_communities.png)-->
 <iframe src="network.html" width = "1000" height = "750" frameborder="0"></iframe>
 
-We are interested in which kind of network we are dealing with. This can be answered by looking at the degree distribution from which we can infer the type of network. From our loglog plot of the network, it seems to follow a poissonian distribution indidicating a random network. This is unsurprising given our modelling of the network.
 
-
+To get a sense of what kind of network we are dealing with we look at the degree distribution. We cab infer the type of network from our loglog plot of the network which seems to follow a poissonian distribution indidicating a random network.
 ![Loglog degree distribution](loglog.png)
 
-Considering the degree of the characters throughout the entire series, we see that Finn and Jake actually take a dip at around season 4-5, which is possibly because they wanted to build more characters and flesh those out such that they have more pieces to play with for plot. The lore of the show also becomes a much more integral part of the show from around season 4-5, so it would make sense to introduce and build characters around there.
 
+Considering the degree of the characters throughout the entire series we see that Finn and Jake actually take a dip at around season 4-5. This is perhaps caused by the writers wanting to build up more characters and flesh those out such that they have more pieces to play with for plot. The lore of the show also becomes a much more integral part of the show from around season 4-5, so it would make sense to introduce and build characters around there.
 ![Normalized out-degree for each season](normalized_degree.png)
 
 
