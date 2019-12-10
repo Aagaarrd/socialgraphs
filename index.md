@@ -15,7 +15,7 @@ We also wanted to look at the sentiment for the individual characters but for th
 
 With this we were now able to calculate the sentiment on an individual level. We were interested to see which characters contributed to the series getting more positive/negative and why. Our hypothesis was that Finn and Jake would change the least over the course of the series seeing as these are the main characters and have to stay more or less consistent. The farther away from being a main character, the more the character would change. 
 
-# Adventure Time seasons
+# Seasonal overview
 Adventure Time is known to most people as a generally fun and joyful show but we wanted to dig deeper into this belief and examine what exactly made this show so happy (apart from the funny voices and vibrant colour scheme). We were also interested to see how the sentiment of the show progressed over time with the initial hypothesis that as the show becomes more complex and the stakes grow higher, the positivity of the episodes will decrease. We were also interested in analysing the sentiment on a character-by-character base to see which characters have a positive impact on the overall sentiment of the show and which have a negative impact. Lastly, we looked at lexical diversity across seasons. 
 
 ## Episode sentiment
