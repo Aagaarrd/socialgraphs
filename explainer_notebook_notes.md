@@ -41,7 +41,7 @@ To gain an understanding of the characters, we looked at their degrees along wit
 
 Betweenness centrality is a measure of how often a node is part of the shortest path between two other nodes.
 
-Eigenvector centrality is used to get see if important characters are often linked with other important characters, thus making them more important.
+Eigenvector centrality is used to get see if important characters are highly linked with other important characters, thus making them more important.
 
 Degree centrality is the simplest form of centrality measure. This is the propability that a node is passed through when traversing the network.
 

@@ -8,8 +8,8 @@ We gather a list of characters for each episode from the [Adventure Time Wiki](h
 The Wiki also provides transcripts for a majority of the episodes. They cut off at around season 8. It seems like no one has had the motivation to transcribe these episodes (future work?). This causes us to only work with episode transcripts from season 1-7. 
 
 ### Short summary of data
-- 956 characters (nodes)
-- 13075 relations (links)
+- 953 characters (nodes)
+- 12984 relations (links)
 - 225 transcripts (season 1-7)
 
 # Network analysis
@@ -50,7 +50,7 @@ There are clusters floating on their own away from the central part of the netwo
 <iframe src="network.html" width = "1000" height = "750" frameborder="0"></iframe>
 
 
-To get a sense of what kind of network we are dealing with we look at the degree distribution. We cab infer the type of network from our loglog plot of the network which seems to follow a poissonian distribution indidicating a random network.
+To get a sense of what kind of network we are dealing with we look at the degree distribution. We cab infer the type of network from our loglog plot of the network which seems to follow a poissonian distribution indicating a random network.
 ![Loglog degree distribution](loglog.png)
 
 
