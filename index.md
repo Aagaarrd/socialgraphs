@@ -55,12 +55,16 @@ To get a sense of what kind of network we are dealing with we look at the degree
 ![Loglog degree distribution](loglog.png)
 
 
-Considering the degree of the characters throughout the entire series we see that Finn and Jake actually take a dip at around season 4-5. This is perhaps caused by the writers wanting to build up more characters and flesh those out such that they have more pieces to play with for plot. The lore of the show also becomes a much more integral part of the show from around season 4-5, so it would make sense to introduce and build characters around there.
+Considering the degree of the characters throughout the entire series we see that Finn and Jake actually take a dip at around season 4-5. This is perhaps caused by the writers wanting to build up more characters and flesh those out such that they have more pieces to play with for plot. The lore of the show also becomes a much more integral part of the show from around season this time, so it would make sense to introduce and build characters around there.
+
+The notisable spike in season 9 is likely caused by the show focusing on serialised episode with a heavy reliance on "mini-series" where the same characters are sure to be present in a few episodes while interacting with a bunch of new characters.
 ![Normalized out-degree for each season](normalized_degree.png)
 
 ## Community detection
 
-Since there aren't any predefined communities in Adventure Time we have to be creative. This caused us to think about a group of characters with something very particular in common. The abundance of princesses in the show who each governs their respective kingdom. Do they form a community even though they don't necessarily interact all that much? To find out we use the Louvain community detection algorithm to find that, yes, there seems to be potential for a community. We plot the distribution of princesses in respect to their assigned community and find that there most certainly is a community present. 
+Since there aren't any predefined communities in Adventure Time we have to be creative. This caused us to think about a group of characters with something very particular in common. The abundance of princesses in the show who each governs their respective kingdom. Do they form a community even though they don't necessarily interact all that much? 
+
+To find out we use the Louvain community detection algorithm to find that, yes, there seems to be potential for a community. We plot the distribution of princesses in respect to their assigned community and find that there most certainly is a community present. 
 
 ![Princess distribution in communties](princess_community.png)
 
