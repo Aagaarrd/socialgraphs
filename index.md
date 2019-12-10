@@ -104,7 +104,11 @@ Thus we can see a change from characters such as Tree Trunks, BMO and a few fair
 
 Since there aren't any predefined communities in Adventure Time we have to be creative. This caused us to think about a group of characters with something very particular in common. The abundance of princesses in the show who each governs their respective kingdom. Do they form a community even though they don't necessarily interact all that much? 
 
-To find out we use the Louvain community detection algorithm to find that, yes, there seems to be potential for a community. We plot the distribution of princesses in respect to their assigned community and find that there most certainly is a community present. 
+We can plot the communities found by Louvain community detection algorithm to find and color those to get a visual representation of what we're working with. The labels are for the top ten character degrees.
+
+![Communities](network_communities.png)
+
+From a subgraph of the princesses it seems as though they could potentially form a community. We plot the distribution of princesses with respect to their assigned community and find that there most certainly is a community of princesses present. 
 
 ![Princess distribution in communties](princess_community.png)
 
