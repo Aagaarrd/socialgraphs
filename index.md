@@ -1,6 +1,6 @@
 # Introduction
 
-Adventure Time is an American fantasy animated television series following the adventures of a boy named Finn the Human and his best friend and adoptive brother Jake the Dog. The show ran from April 2010 until September of 2018, airing 283 episodes across 10 seasons where each episode is about 10 minutes long. The show started out as being mainly a children’s program but after it became a viral hit on the internet, many teens and grown-ups also started watching. As older fans of the show ourselves, we wanted to use this project to examine whether it is possible to determine that Adventure Time matures together with its audience. 
+Adventure Time is an American fantasy animated television series following the adventures of a boy named Finn the Human and his best friend and adoptive brother Jake the Dog. The show ran from April of 2010 until September of 2018, airing 283 episodes across 10 seasons where each episode is about 10 minutes long. The show started out as being mainly a children’s program but after it became a viral hit on the internet, many teens and grown-ups also started watching. As older fans of the show ourselves, we wanted to use this project to examine whether it is possible to determine that Adventure Time matures together with its audience. 
 
 ## Data
 The sheer amount of episodes and characters makes this an incredibly interesting subject for network science and text analysis. We got all of our data from [The Adventure Time Wiki](https://www.adventuretime.fandom.com) which has pages for each episode containing lists of major and minor characters together with episode transcripts. There is a severe lack of transcripts for episodes in Season 8-10 so for the text analysis part of this project we only analysed episodes from Season 1-7. If we summarise every character and relation (a relation between two characters meaning that they appeared in the same episode), we now have a dataset consisting of 
@@ -11,7 +11,7 @@ The sheer amount of episodes and characters makes this an incredibly interesting
 ## Project questions
 In order to determine whether Adventure Time becomes more and more mature as the show progresses, we wanted to examine the development in the emotional value (sentiment) of the words used for each episode. Our hypothesis was that the show would get more serious with time and that the sentiment would lower. We also wanted to look at the diversity of words used; an increasing lexical diversity across seasons could very well indicate that the show is becoming more mature with time. 
 
-We also wanted to look at the sentiment for the individual characters but for this we first needed to find out which out of the 956 characters to focus on. Our hypothesis was that Finn and Jake were by far the most important characters to the show, seeing as these are usually labeled as the main characters. Other important characters could include Princess Bubblegum, Ice King, BMO, and more. We also wanted to see if there were any interesting communities between the characters -- perhaps a community of princesses? 
+We also wanted to look at the sentiment for the individual characters but for this we first needed to find out which out of the 953 characters to focus on. Our hypothesis was that Finn and Jake were by far the most important characters to the show, seeing as these are usually labeled as the main characters. Other important characters could include Princess Bubblegum, Ice King, BMO, and more. We also wanted to see if there were any interesting communities between the characters -- perhaps a community of princesses? 
 
 With this we were now able to calculate the sentiment on an individual level. We were interested to see which characters contributed to the series getting more positive/negative and why. Our hypothesis was that Finn and Jake would change the least over the course of the series seeing as these are the main characters and have to stay more or less consistent. The farther away from being a main character, the more the character would change. 
 
@@ -61,35 +61,37 @@ From the table below, we see to no surprise that Finn and Jake are the main play
 <th>9</th>      <td>Gunter: 150</td>      <td>Tree Trunks: 105</td>      <td>Lady Rainicorn: 290</td>    </tr>    <tr>      
 <th>10</th>     <td>Peppermint Butler: 142</td>      <td>Peppermint Butler: 101</td>      <td>Gunter: 256</td>    </tr>  </tbody></table>
 
-
-<!--
-<table border="0" class="dataframe">  <thead>    <tr style="text-align: center;">      <th></th>      <th>Betweenness</th>      <th>Eigenvector</th>      <th>Degree centrality</th>    </tr>  </thead>  <tbody>    <tr>      
-<th>1</th>      <td>Jake: 0.195</td>      <td>Candy People: 0.197</td>      <td>Jake: 1.024</td>    </tr>    <tr>      
-<th>2</th>      <td>Finn: 0.148</td>      <td>BMO: 0.148</td>      <td>Finn: 1.01</td>    </tr>    <tr>      
-<th>3</th>      <td>BMO: 0.093</td>      <td>Peppermint Butler: 0.14</td>      <td>BMO: 0.575</td>    </tr>    <tr>      
-<th>4</th>      <td>Princess Bubblegum: 0.071</td>      <td>Lady Rainicorn: 0.136</td>      <td>Princess Bubblegum: 0.483</td>    </tr>    <tr>      
-<th>5</th>      <td>Ice King: 0.069</td>      <td>Ice King: 0.134</td>      <td>Ice King: 0.469</td>    </tr>    <tr>      
-<th>6</th>      <td>Lady Rainicorn: 0.049</td>      <td>Tree Trunks: 0.131</td>      <td>Marceline: 0.352</td>    </tr>    <tr>      
-<th>7</th>      <td>Candy People: 0.045</td>      <td>Jake: 0.127</td>      <td>Candy People: 0.317</td>    </tr>    <tr>      
-<th>8</th>      <td>Lumpy Space Princess: 0.04</td>      <td>Princess Bubblegum: 0.126</td>      <td>Lumpy Space Princess: 0.316</td>    </tr>    <tr>      
-<th>9</th>      <td>Tree Trunks: 0.033</td>      <td>Mr. Pig: 0.124</td>      <td>Lady Rainicorn: 0.304</td>    </tr>    <tr>      
-<th>10</th>     <td>Gunter: 0.032</td>      <td>Wyatt: 0.12</td>      <td>Gunter: 0.268</td>    </tr>  </tbody></table>
--->
+With our hypothesis in mind we can also make use of the network to say something about whether or not the show becomes more mature over time. With the introduction of many plot heavy elements and moving away from fairly shallow characters which are more often seen in a children's show we can look at the development of which characters are important throughout the show's airtime.
 
 <hr>
 
-There are clusters floating on their own away from the central part of the network. These represent episodes in which there are a lot of characters that are never seen again or only appear in episodes with each other. An example of this is the episode [City of Thieves](https://adventuretime.fandom.com/wiki/City_of_Thieves_(episode)) in which Finn and Jake travel to a city where everyone is a thief. These thief characters are never used again and are therefore only interconnected forming a cluster.
-<!--![Network of all characters across all episodes](network_communities.png)-->
+Getting a general look at the network there are clusters floating on their own away from the central part of the network. These represent episodes in which there are a lot of characters that are never seen again or only appear in episodes with each other. An example of this is the episode [City of Thieves](https://adventuretime.fandom.com/wiki/City_of_Thieves_(episode)) in which Finn and Jake travel to a city where everyone is a thief. These thief characters are never used again and are therefore only interconnected forming a cluster.
+
+
 <iframe src="network.html" width = "1000" height = "750" frameborder="0"></iframe>
-
-To get a sense of what kind of network we are dealing with we look at the degree distribution. We cab infer the type of network from our loglog plot of the network which seems to follow a poissonian distribution indicating a random network.
+<!--
+To get a sense of what kind of network we are dealing with we look at the degree distribution. We can infer the type of network from our loglog plot of the network which seems to follow a poissonian distribution indicating a random network.
 ![Loglog degree distribution](loglog.png)
+-->
 
+The following plot tells us the most about our hypothesis since we see a significant decline in importance for the main characters of the show which later is recovered. This could imply that the they wanted to invest time in other characters and thus build up the universe more thoroughly.
 
-Considering the degree of the characters throughout the entire series we see that Finn and Jake actually take a dip at around season 4-5. This is perhaps caused by the writers wanting to build up more characters and flesh those out such that they have more pieces to play with for plot. The lore of the show also becomes a much more integral part of the show from around season this time, so it would make sense to introduce and build characters around there.
 
 The notisable spike in season 9 is likely caused by the show focusing on serialised episode with a heavy reliance on "mini-series" where the same characters are sure to be present in a few episodes while interacting with a bunch of new characters.
+
+
 ![Normalized out-degree for each season](normalized_degree.png)
+
+
+Another intesting takeaway from the network is the measure "Eigenvector Centrality". This tells us if important characters are linked to other important characters. With our modelling of the network this leads to some interesting results. Namely that it seems as if 'secondary' characters are given a eigenvector centrality. We use the term secondary in the sense that they most definitely are part of the story but not a primary part (with some exceptions). Characters such as 'The Lich' which is the main antagonist for a large portion of the show, Cosmic Owl and Prismo which are also characters that drives the plot of the story onwards.
+
+Thus we can see a change from characters such as Tree Trunks, BMO and a few fairly random characters to a select few that has to do with the story that is told in the last few seasons.
+<table border="0" class="dataframe">  <thead>    <tr style="text-align: right;">      <th></th>      <th>season 1</th>      <th>season 2</th>      <th>season 3</th>      <th>season 4</th>      <th>season 5</th>      <th>season 6</th>      <th>season 7</th>      <th>season 8</th>      <th>season 9</th>      <th>season 10</th>    </tr>  </thead>  <tbody>    <tr>      
+	<th>1</th>      <td>Tree Trunks: 0.302</td>      <td>Mr. Goose: 0.412</td>      <td>Two-Headed Duck: 0.388</td>      <td>Scientific Parasite: 0.328</td>      <td>Candy People: 0.217</td>      <td>Candy People: 0.272</td>      <td>Worm: 0.246</td>      <td>BMO: 0.263</td>      <td>Lumpy Space People: 0.355</td>      <td>The Morrow: 0.358</td>    </tr>    <tr>      
+	<th>2</th>      <td>King Worm: 0.291</td>      <td>Mrs. Yoder: 0.39</td>      <td>Mr. Pig: 0.347</td>      <td>Gumball Guardian: 0.304</td>      <td>Gunter: 0.212</td>      <td>King of Ooo: 0.247</td>      <td>Marceline\'s mom: 0.238</td>      <td>Candy People: 0.24</td>      <td>Wyatt: 0.33</td>      <td>Squirrel: 0.322</td>    </tr>    <tr>      
+	<th>3</th>      <td>Lady Rainicorn: 0.271</td>      <td>Cat: 0.302</td>      <td>Tree Trunks: 0.31</td>      <td>Jellyfish: 0.292</td>      <td>BMO: 0.201</td>      <td>Penguins: 0.214</td>      <td>Spider Ghost: 0.221</td>      <td>The Lich: 0.229</td>      <td>Me-Mow: 0.307</td>      <td>Scorcher: 0.29</td>    </tr>    <tr>      
+	<th>4</th>      <td>Centipede: 0.229</td>      <td>Chipmunk: 0.261</td>      <td>Phil: 0.278</td>      <td>Cow: 0.226</td>      <td>Gumball Guardian: 0.176</td>      <td>Laser Wizard: 0.21</td>      <td>Toronto: 0.212</td>      <td>Slime Princess: 0.206</td>      <td>Cosmic Owl: 0.286</td>      <td>Sir Slicer: 0.262</td>    </tr>    <tr>      
+	<th>5</th>      <td>Wildberry Princess: 0.207</td>      <td>Owls: 0.225</td>      <td>Punch Bowl: 0.249</td>      <td>Banana Guards: 0.207</td>      <td>Finn: 0.16</td>      <td>Bufo: 0.192</td>      <td>Coal Man: 0.198</td>      <td>Gunter: 0.189</td>      <td>Prismo: 0.266</td>      <td>Ash: 0.236</td>    </tr>  </tbody></table>
 
 ## Community detection
 
