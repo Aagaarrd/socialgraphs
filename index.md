@@ -3,7 +3,7 @@
 Adventure Time is an American fantasy animated television series following the adventures of a boy named Finn the Human and his best friend and adoptive brother Jake the Dog. The show ran from April 2010 until September of 2018, airing 283 episodes across 10 seasons where each episode is about 10 minutes long. The show started out as being mainly a children’s program but after it became a viral hit on the internet, many teens and grown-ups also started watching. As older fans of the show ourselves, we wanted to use this project to examine whether it is possible to determine that Adventure Time matures together with its audience. 
 
 ## Data
-The sheer amount of episodes and characters makes this an incredibly interesting subject for network science and text analysis. We got all of our data from [The Adventure Time Wiki](https://www.adventuretime.fandom.com) which has pages for each episode containing lists of major and minor characters together with episode transcripts. There is a severe lack of transcripts for episodes in Season 8-10 so for the text analysis part of this project we only analysed episodes from Season 1-7. If we summarise every character and relation (a relation between two characters meaning that appeared in the same episode), we now have a dataset consisting of 
+The sheer amount of episodes and characters makes this an incredibly interesting subject for network science and text analysis. We got all of our data from [The Adventure Time Wiki](https://www.adventuretime.fandom.com) which has pages for each episode containing lists of major and minor characters together with episode transcripts. There is a severe lack of transcripts for episodes in Season 8-10 so for the text analysis part of this project we only analysed episodes from Season 1-7. If we summarise every character and relation (a relation between two characters meaning that they appeared in the same episode), we now have a dataset consisting of 
 - 953 characters 
 - 12984 relations
 - 225 transcripts (Season 1-7)
@@ -45,8 +45,7 @@ Another indication of maturity could be the lexical diversity, meaning the amoun
 ![Lexical diversity](lexical.png)
 
 
-# Network analysis
-## Network exploration
+# Network exploration
 We want to verify that the characters we believe are the most important actually are from an analytical point of view.
 From the table below, we see to no surprise that Finn and Jake are the main players given their large out-degree and relatively low in-degree. This is a metric of how many episode in which they've had a prominent role.
 <table border="0" class="dataframe">  <thead>    <tr style="text-align: center;">      <th></th>      
@@ -83,7 +82,6 @@ There are clusters floating on their own away from the central part of the netwo
 <!--![Network of all characters across all episodes](network_communities.png)-->
 <iframe src="network.html" width = "1000" height = "750" frameborder="0"></iframe>
 
-## Degree distribution
 To get a sense of what kind of network we are dealing with we look at the degree distribution. We cab infer the type of network from our loglog plot of the network which seems to follow a poissonian distribution indicating a random network.
 ![Loglog degree distribution](loglog.png)
 
@@ -118,3 +116,11 @@ BMO has the most impressive development, going from the most negative to the mos
 
 
 
+# Discussion
+Our main hypothesis for this project was that there would be evidence to support that Adventure Time becomes more mature with age. We see that the sentiment for each episode actually increases over time which goes against our hypothesis that the show would become more negative over time. We do not see this as a direct contradiction to our main hypothesis, however, since the emotional value of words in a show only tells half the truth of the complexity of the subjects explored in each episode. Hence, it could be very possible that even though the episodes generally become happier they could also at the same time be handling more mature themes. This could very well be backed by the fact that as the positivity of the show increases, so does the lexical diversity. This means that the language used in the episodes becomes more diverse and complex which definitely supports our main hypothesis that the show becomes more mature with time. 
+
+As we began to explore the network in our data we found that Finn and Jake should definitely be regarded as the main characters since they both have a very large out-degree and total degree compared to the rest of the cast. Other important characters include BMO, Princess Bubblegum, Ice King, Marceline, Candy People, Lumpy Space Princess, Lady Rainicorn and Gunter which was no surprise to us. We also did indeed find evidence that there was a community of princesses with our data. 
+
+Using this list of most important characters, we could calculate the individual sentiments for each character. Most characters’ sentiments was around the average of 5.57 with Princess Bubblegum’s being well above average and Marceline’s being well below. We expected for Finn and Jake to be the characters with the least development in sentiment across the series but actually found that Finn develops a lot throughout the show. This makes sense since part of Finn’s journey is growing up and finding himself. Most of the 
+
+In conclusion, we did not find evidence to disprove our theory that Adventure Time goes from being a children’s show to being a more mature show for all ages. The episodes increase in sentiment score over time and so does the lexical diversity. The main characters are Finn and Jake and though Jake does not change much in sentiment throughout the show, Finn undergoes a lot of character development as he himself becomes more mature. In the future it would be interesting to analyse the three lasts seasons of the show since episodes for these have not been transcribed yet. 
