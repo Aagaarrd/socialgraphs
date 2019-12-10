@@ -1,16 +1,20 @@
 # Introduction
 
-Our project is based on an analysis of the Cartoon Network animated TV-series Adventure Time. The series launched in April 2010 and concluded in September of 2018 with 10 seasons and 283 episodes which on average are about 10 minutes each. We wish to present some questions and hypotheses and try to answer them with network and text analysis.
+Adventure Time is an American fantasy animated television series following the adventures of a boy named Finn the Human and his best friend and adoptive brother Jake the Dog. The show ran from April 2010 until September of 2018, airing 283 episodes across 10 seasons where each episode is about 10 minutes long. The show started out as being mainly a children’s program but after it became a viral hit on the internet, many teens and grown-ups also started watching. As older fans of the show ourselves, we wanted to use this project to examine whether it is possible to determine that Adventure Time matures together with its audience. 
 
 ## Data
-We gather a list of characters for each episode from the [Adventure Time Wiki](https://www.adventuretime.fandom.com). This already lead us to some choices about how we wanted to model the analysis. We chose to base it on the characters in each episode for which there are two lists in each episode article: 'Major Characters' and 'Minor Characters' - from what we can see these are ordered in approximate importance for the episode. Because of this the links between characters are made up of combinations of the combined list of major and minor characters since it gives a good indication of which characters are the most important.
+The sheer amount of episodes and characters makes this an incredibly interesting subject for network science and text analysis. We got all of our data from [The Adventure Time Wiki](https://www.adventuretime.fandom.com) which has pages for each episode containing lists of major and minor characters together with episode transcripts. There is a severe lack of transcripts for episodes in Season 8-10 so for the text analysis part of this project we only analysed episodes from Season 1-7. If we summarise every character and relation (a relation between two characters meaning that appeared in the same episode), we now have a dataset consisting of 
+- 953 characters 
+- 12984 relations
+- 225 transcripts (Season 1-7)
 
-The Wiki also provides transcripts for a majority of the episodes. They cut off at around season 8. It seems like no one has had the motivation to transcribe these episodes (future work?). This causes us to only work with episode transcripts from season 1-7. 
+## Project questions
+In order to determine whether Adventure Time becomes more and more mature as the show progresses, we wanted to examine the development in the emotional value (sentiment) of the words used for each episode. Our hypothesis was that the show would get more serious with time and that the sentiment would lower. We also wanted to look at the diversity of words used; an increasing lexical diversity across seasons could very well indicate that the show is becoming more mature with time. 
 
-### Short summary of data
-- 953 characters (nodes)
-- 12984 relations (links)
-- 225 transcripts (season 1-7)
+We also wanted to look at the sentiment for the individual characters but for this we first needed to find out which out of the 956 characters to focus on. Our hypothesis was that Finn and Jake were by far the most important characters to the show, seeing as these are usually labeled as the main characters. Other important characters could include Princess Bubblegum, Ice King, BMO, and more. We also wanted to see if there were any interesting communities between the characters -- perhaps a community of princesses? 
+
+With this we were now able to calculate the sentiment on an individual level. We were interested to see which characters contributed to the series getting more positive/negative and why. Our hypothesis was that Finn and Jake would change the least over the course of the series seeing as these are the main characters and have to stay more or less consistent. The farther away from being a main character, the more the character would change. 
+
 
 # Network analysis
 ## Network exploration
