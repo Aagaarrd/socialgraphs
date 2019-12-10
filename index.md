@@ -13,6 +13,7 @@ The Wiki also provides transcripts for a majority of the episodes. They cut off 
 - 225 transcripts (season 1-7)
 
 # Network analysis
+## Network exploration
 We want to verify that the characters we believe are the most important actually are from an analytical point of view.
 From the table below, we see to no surprise that Finn and Jake are the main players given their large out-degree and relatively low in-degree. This is a metric of how many episode in which they've had a prominent role.
 <table border="0" class="dataframe">  <thead>    <tr style="text-align: center;">      <th></th>      
@@ -49,7 +50,7 @@ There are clusters floating on their own away from the central part of the netwo
 <!--![Network of all characters across all episodes](network_communities.png)-->
 <iframe src="network.html" width = "1000" height = "750" frameborder="0"></iframe>
 
-
+## Degree distribution
 To get a sense of what kind of network we are dealing with we look at the degree distribution. We cab infer the type of network from our loglog plot of the network which seems to follow a poissonian distribution indicating a random network.
 ![Loglog degree distribution](loglog.png)
 
